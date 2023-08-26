@@ -7,15 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // Obtener valores del formulario
       const nombre = document.getElementById('nombre').value;
-      // Obtener más valores aquí
-  
+      const Fecha = document.getElementById('Fecha').value;
+      const Lugar = document.getElementById('Lugar').value;
+      const Responsable = document.getElementById('Responsable').value;
+      const Descripcion = document.getElementById('Descripcion').value;
+      const Participantes = document.getElementById('Descripcion').value;
       // Crear una nueva fila en la tabla de eventos
       const newRow = document.createElement('tr');
       newRow.innerHTML = `
         <td>${nombre}</td>
-        <td>Fecha</td>
-        <td>Lugar</td>
-        <!-- Agregar más celdas de datos aquí -->
+        <td>${Fecha}</td>
+        <td>${Lugar}</td>
+        <td>${Responsable}</td>
+        <td>${Descripcion}</td>
+        <td>${Participantes}</td>
       `;
   
       eventosLista.appendChild(newRow);

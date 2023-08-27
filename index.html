@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Sistema de Gestión de Eventos</title>
-</head>
-<body>
-  <header>
-    <h1>Sistema de Gestión de Eventos Escolares</h1>
-    <img src="/images/colegio.png" alt="Icono Colegio" id="icono-colegio">
-  </header>
-  <main>
-    <form id="evento-form">
-      <h2>Agregar Evento</h2>
-    
-      <label for="nombre">Nombre del evento:</label>
-      <input type="text" id="nombre" required><br />
-    
-      <label for="Fecha">Fecha del evento:</label>
-      <input type="date" id="Fecha" required><br />
-    
-      <label for="Lugar">Lugar del evento:</label>
-      <input type="text" id="Lugar" required><br />
-    
-      <label for="Descripcion">Descripción del evento:</label>
-      <input type="text" id="Descripcion" required><br />
-    
-      <label for="Responsable">Responsable del evento:</label>
-      <input type="text" id="Responsable" required><br />
-    
-      <label for="Participantes">Participantes del evento:</label>
-      <input type="text" id="Participantes" required><br />
-    
-      <button type="submit">Agregar Evento</button>
-    </form>
-    <section id="eventos">
-      <h2>Lista de Eventos</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Fecha</th>
-            <th>Lugar</th>
-            <th>Descripcion</th>
-            <th>Responsable</th>
-            <th>Participantes</th>
-          </tr>
-        </thead>
-        <tbody id="eventos-lista">
- 
-        </tbody>
-      </table>
-    </section>
-  </main>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sistema de Gestión de Eventos</title>
+  </head>
+  <body>
+    <header>
+      <h1
+        class="display-4"
+        data-toggle="tooltip"
+        data-placement="bottom"
+        title="Título del encabezado"
+      >
+        Sistema de Gestión de Eventos Escolares
+      </h1>
+      <div class="icon-circle">
+        <img src="/images/colegio.png" alt="Icono Colegio" id="icono-colegio" />
+      </div>
+    </header>
+    <main>
+      <form id="evento-form">
+        <h2>Agregar Evento</h2>
+
+        <label for="nombre">Nombre del evento:</label>
+        <input type="text" id="nombre" required /><br />
+
+        <label for="Fecha">Fecha del evento:</label>
+        <input type="date" id="Fecha" required /><br />
+
+        <label for="Lugar">Lugar del evento:</label>
+        <input type="text" id="Lugar" required /><br />
+
+        <label for="Descripcion">Descripción del evento:</label>
+        <input type="text" id="Descripcion" required /><br />
+
+        <label for="Responsable">Responsable del evento:</label>
+        <input type="text" id="Responsable" required /><br />
+
+        <label for="Participantes">Participantes del evento:</label>
+        <input type="text" id="Participantes" required /><br />
+
+        <button type="submit">Agregar Evento</button>
+      </form>
+      <section id="eventos">
+        <h2>Lista de Eventos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha</th>
+              <th>Lugar</th>
+              <th>Descripcion</th>
+              <th>Responsable</th>
+              <th>Participantes</th>
+            </tr>
+          </thead>
+          <tbody id="eventos-lista"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </body>
 </html>

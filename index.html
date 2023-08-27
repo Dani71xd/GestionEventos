@@ -4,68 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <title>Sistema de Gestión de Eventos</title>
   </head>
   <body>
-    <header>
-      <h1
-        class="display-4"
-        data-toggle="tooltip"
-        data-placement="bottom"
-        title="Título del encabezado"
-      >
-        Sistema de Gestión de Eventos Escolares
-      </h1>
-      <div class="icon-circle"></div>
+    <header class="bg-light py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1
+          class="display-4"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Título del encabezado"
+        >
+          Sistema de Gestión de Eventos Escolares
+        </h1>
+      </div>
     </header>
-    <main>
-      <form id="evento-form">
-        <h2>Agregar Evento</h2>
-
-        <label for="nombre">Nombre del evento:</label>
-        <input type="text" id="nombre" required /><br />
-
-        <label for="Fecha">Fecha del evento:</label>
-        <input type="date" id="Fecha" required /><br />
-
-        <label for="Lugar">Lugar del evento:</label>
-        <input type="text" id="Lugar" required /><br />
-
-        <label for="Descripcion">Descripción del evento:</label>
-        <input type="text" id="Descripcion" required /><br />
-
-        <label for="Responsable">Responsable del evento:</label>
-        <input type="text" id="Responsable" required /><br />
-
-        <label for="Participantes">Participantes del evento:</label>
-        <input type="text" id="Participantes" required /><br />
-
-        <button type="submit">Agregar Evento</button>
-      </form>
-      <section id="eventos">
-        <h2>Lista de Eventos</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Fecha</th>
-              <th>Lugar</th>
-              <th>Descripcion</th>
-              <th>Responsable</th>
-              <th>Participantes</th>
-            </tr>
-          </thead>
-          <tbody id="eventos-lista"></tbody>
-        </table>
-      </section>
+    <main class="py-5">
+      <div class="container">
+        <form id="evento-form">
+          <h2 class="mb-4">Agregar Evento</h2>
+          <div class="form-group">
+            <label for="nombre">Nombre del evento:</label>
+            <input type="text" class="form-control" id="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="Fecha">Fecha del evento:</label>
+            <input type="date" class="form-control" id="Fecha" required />
+          </div>
+          <div class="form-group">
+            <label for="Lugar">Lugar del evento:</label>
+            <input type="text" class="form-control" id="Lugar" required />
+          </div>
+          <div class="form-group">
+            <label for="Descripcion">Descripción del evento:</label>
+            <input type="text" class="form-control" id="Descripcion" required />
+          </div>
+          <div class="form-group">
+            <label for="Responsable">Responsable del evento:</label>
+            <input type="text" class="form-control" id="Responsable" required />
+          </div>
+          <div class="form-group">
+            <label for="Participantes">Participantes del evento:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Participantes"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Agregar Evento</button>
+        </form>
+        <section id="eventos" class="mt-5">
+          <h2>Lista de Eventos</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Lugar</th>
+                <th>Descripcion</th>
+                <th>Responsable</th>
+                <th>Participantes</th>
+              </tr>
+            </thead>
+            <tbody id="eventos-lista">
+              <!-- Los eventos se agregarán dinámicamente aquí -->
+            </tbody>
+          </table>
+        </section>
+      </div>
     </main>
     <script src="main.js"></script>
   </body>

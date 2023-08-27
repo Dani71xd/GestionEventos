@@ -76,3 +76,91 @@ td {
   background-position: center; /* Centra el ícono dentro del círculo */
   background-repeat: no-repeat; /* Evita la repetición del ícono */
 }
+
+/* Agrega este estilo al final de tu archivo styles.css */
+
+/* Paleta de colores */
+:root {
+  --color-primary: #3498db;
+  --color-secondary: #e74c3c;
+  --color-accent: #2ecc71;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo para el contenedor del ícono en un círculo */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 20px;
+  background-image: url("/images/colegio.png");
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo para los títulos */
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--color-primary);
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el título al pasar el mouse */
+h1:hover::before,
+h2:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Agrega este estilo al final de tu archivo styles.css */
+
+/* Paleta de colores */
+:root {
+  --color-primary: #3f51b5;
+  --color-secondary: #f44336;
+  --color-accent: #4caf50;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Estilo para el contenedor del ícono en un círculo */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 20px;
+  background-image: url("/images/colegio.png");
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo para los títulos */
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--color-primary);
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el título al pasar el mouse */
+h1:hover::before,
+h2:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

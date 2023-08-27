@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const Lugar = document.getElementById('Lugar').value;
       const Responsable = document.getElementById('Responsable').value;
       const Descripcion = document.getElementById('Descripcion').value;
-      const Participantes = document.getElementById('Descripcion').value;
+      const Participantes = document.getElementById('Participantes').value;
       // Crear una nueva fila en la tabla de eventos
       const newRow = document.createElement('tr');
       newRow.innerHTML = `

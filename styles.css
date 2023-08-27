@@ -48,8 +48,6 @@ td {
   text-align: left;
 }
 
-/* Agrega este estilo al final de tu archivo styles.css */
-
 /* Estilo personalizado para mostrar el tooltip */
 [data-toggle="tooltip"] {
   cursor: pointer;
@@ -61,4 +59,20 @@ td {
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
+}
+
+/* Estilo para el contenedor del ícono en un círculo */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Ajusta el tamaño del círculo */
+  height: 60px; /* Ajusta el tamaño del círculo */
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo del círculo */
+  border-radius: 50%; /* Hace que el círculo sea redondo */
+  margin-right: 20px; /* Espaciado entre el círculo y el título */
+  background-image: url("/images/colegio.png"); /* Agrega el ícono como fondo */
+  background-size: 40px; /* Ajusta el tamaño del ícono */
+  background-position: center; /* Centra el ícono dentro del círculo */
+  background-repeat: no-repeat; /* Evita la repetición del ícono */
 }
